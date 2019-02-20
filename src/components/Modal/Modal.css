@@ -24,8 +24,24 @@
   /* display: none; */
   /* opacity: 0;
   transform: translateY(-100%); */
-  animation: closeModal 0.4s ease-out forwards;
+  animation: closeModal 1s ease-out forwards;
 }
+
+/* classes used by CSSTransition - INÍCIO */
+.fade-slide-enter {
+}
+
+.fade-slide-enter-active {
+  animation: openModal 0.4s ease-out forwards;
+}
+
+.fade-slide-exit {
+}
+
+.fade-slide-exit-active {
+  animation: closeModal 1s ease-out forwards;
+}
+/* classes used by CSSTransition - FIM */
 
 @keyframes openModal {
   0% {
